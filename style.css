@@ -98,6 +98,11 @@ header nav ul a {
     cursor: pointer;
 }
 
+.banner button a {
+    text-decoration: none;
+    color: black;
+}
+
 .banner h1 {
     padding-bottom: 10px;
 }
@@ -182,6 +187,10 @@ a:hover {
 }
 
 .produkter img:hover {
+    transform: scale(1.02);
+}
+
+.particle img:hover {
     transform: scale(1.02);
 }
 
@@ -413,9 +422,16 @@ aside {
 .particle {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     padding: 10px;
     margin: 20px;
+    margin-left: 3px;
+    width: 100%;
+}
+
+.particle img {
+    width: 100%;
+    height: auto;
 }
 
 article a{
@@ -427,7 +443,7 @@ aside h2 {
     font-weight: bold;
     font-size: 1em;
     margin-bottom: 20px;
-    margin-left: 30px;
+    margin-left: 15px;
     margin-top: 30px;
 }
 
@@ -453,11 +469,12 @@ aside article p {
 
 .checkoutmain {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     border: none;
     text-align: left;
     margin: 20px;
+    align-items: left;
+    align-content: left;
 }
 
 .checkoutmain h1 {
@@ -474,6 +491,13 @@ aside article p {
     text-transform: uppercase;
 }
 
+.product-card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+ 
 .product-card img {
     width: 100%;
     height: auto;
@@ -512,7 +536,7 @@ aside article p {
     flex-direction: column;
     margin-bottom: 10px;
     padding: 10px;
-    padding-right: 200px;
+    padding-right: 190px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -533,6 +557,10 @@ aside article p {
 
 .personopplysninger form button:hover {
     background-color: #f0f0f0;
+}
+
+.personopplysninger{
+    background-color: #fff;
 }
 
 .levering h2 {
@@ -565,6 +593,10 @@ aside article p {
     padding: 10px;
 }
 
+.levering {
+    background-color: #fff;
+}
+
 .betaling h2 {
     font-weight: bold;
     font-size: 1.2em;
@@ -589,7 +621,7 @@ aside article p {
     flex-wrap: wrap;
     flex-direction: column;
     margin-bottom: 5px;
-    padding: 10px 200px 10px 10px;
+    padding: 10px 190px 10px 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -615,7 +647,4 @@ aside article p {
     text-transform: none;
     font-weight: normal;
 }
-
-
-   
 
