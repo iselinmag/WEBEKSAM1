@@ -10,6 +10,7 @@ html {
 
 body {
     font-family: sans-serif;
+    background-color: #fff;
 }
 
 #grid-container {
@@ -38,15 +39,15 @@ header {
     margin-left: 3px;
     flex: 0.3;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     border-radius: 5px 0 0 5px;
     cursor: text;
 }
 
 .search button {
     padding: 8px;
-    border: 1px solid #ccc;
-    background-color: #ffffff;
+    border: 1px solid #000000;
+    background-color: #e6e6e6;
     cursor: pointer;
     border-radius: 0 5px 5px 0;
     margin-left: 0;
@@ -101,6 +102,7 @@ header nav ul a {
 .banner button a {
     text-decoration: none;
     color: black;
+    padding: 30px;
 }
 
 .banner h1 {
@@ -291,6 +293,7 @@ footer {
     border-top: 1px solid #ccc;
     margin-left: 10px;
     margin-right: 10px;
+    background-color: #fff;
 }
 
 .footerlogo {
