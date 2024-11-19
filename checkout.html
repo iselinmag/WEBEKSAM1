@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="ikoner/css/fontawesome.css" rel="stylesheet">
+    <link href="ikoner/css/brands.css" rel="stylesheet">
+    <link href="ikoner/css/solid.css" rel="stylesheet">
+    <title>Bestilling</title>
+</head>
+
+<body>
+    <div id="grid-container">
+        <header>
+            <form class="search">
+                <label for="search"></label>
+                <input type="search" placeholder="Søk etter produkter..." id="search">
+
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+
+        <nav class="nav-liste">
+            <ul>
+                <li>
+                    <a href="index.html">Hjem</a></li>
+                <li>
+                    <a href="#popprodukter">Produkter</a></li>
+                <li>
+                    <a href="index.html" class="logo">Logo</a></li>
+                <li>
+                    <a href="index.html#kategorier">Kategorier</a></li>
+                <li>
+                    <a href="#kontakt-info">Kontakt oss</a> </li>
+                <li>
+                    <i class="fa-solid fa-user" alt="Din konto"></i></li>
+                <li>
+                    <i class="fa-solid fa-heart" alt="Favoritter"></i></li>
+                <li>
+                    <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+        </header>
+
+<main class="checkoutmain">
+    <h1>Kasse</h1>
+
+    <section class="shoppingbag">
+    <h2>1. Shoppingbagen din</h2>
+    <article class="product-card">
+        <img src="https://picsum.photos/400" alt="Produktbilde">
+        <h3>Product name</h3>
+        <p>Kr 1999</p>
+        <p>Farge: beige</p>
+    </article>
+    <article class="product-card">
+        <img src="https://picsum.photos/400" alt="Produktbilde">
+        <h3>Product name</h3>
+        <p>Kr 1999</p>
+        <p>Farge: beige</p>
+    </article>
+    <article class="product-card">
+        <img src="https://picsum.photos/400" alt="Produktbilde">
+        <h3>Product name</h3>
+        <p>Kr 1999</p>
+        <p>Farge: beige</p>
+    </article>
+
+    </section>
+
+    <section class="personopplysninger">
+        <h2>2. Dine opplysninger</h2>
+        <p>Leveringsadresse</p>
+        <form>
+            <label>
+            <input type="text" id="fornavn" name="fornavn" placeholder="Fornavn*" required>
+            </label>
+
+            <label>
+            <input type="text" id="etternavn" name="etternavn" placeholder="Etternavn*" required>
+            </label>
+
+            <label>
+            <input type="text" id="adresse" name="adresse" placeholder="Gateadresse*" required>
+            </label>
+
+            <label>
+            <input type="text" id="postnr" name="postnr" placeholder="Postnummer*" required>
+            </label>
+
+            <label>
+            <input type="text" id="poststed" name="poststed" placeholder="Postnummer*" required>
+            </label>
+
+
+            <button type="submit">Lagre</button>
+            <button type="reset">Avbryt</button>
+        </form>
+    </section>
+
+    <section class="levering">
+        <h2>3. Levering</h2>
+        <p>Leveringsvalg</p>
+        <form>
+            <label>
+                <input type="radio" name="levering" value="ekspresshjem"> Express Hjemlevering
+            </label>
+            <label>
+                <input type="radio" name="levering" value="utleveringssted"> Ekspress Pakke til utleveringssted
+            </label>
+            <label>
+                <input type="radio" name="levering" value="hjemlevering"> Standard Hjemleverings
+            </label>
+
+        </form>
+ </section>
+
+ <section class="betaling">
+    <h2>4. Betaling</h2>
+    <p>Betal med kort</p>
+    <form>
+        <label for="kortnummer">Kortnummer</label>
+        <input type="text" id="kortnummer" name="kortnummer" placeholder="1234 56** **** 4567" required>
+        <label for="utlopsdato">Utløpsdato</label>
+        <input type="text" id="utlopsdato" name="utlopsdato" placeholder="mm / dd / yyyy" required>
+        <label for="cvv">CVC/CVV</label>
+        <input type="text" id="cvc" name="cvc" placeholder="CVC/CVV" required>
+
+        <p>Å betale inkl. mva.</p>
+        <p>1 199kr</p>
+        <button type="submit">Fullfør kjøp</button>
+        <p>Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger.</p>
+
+
+        <label>Ja takk! Send nyhetsbrev til meg.
+            <input type="checkbox" name="nyhetsbrev" required>
+        </label>
+        <label>Jeg ønsker å motta tekstmeldninger med tilbud og nyheter.
+            <input type="checkbox" name="tekstmelding">
+        </label>
+    </form>
+ </section>
+</main>
+
+<footer>
+
+    <section class="footerlogo">
+        <a href="index.html">Logo</a>
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+    </section>
+
+    <section id="kontakt-info">
+        <h3>Kontakt</h3>
+        <ul>
+            <li><i class="fa-solid fa-location-dot"></i>  <strong>Adresse:</strong> B R A Veien 4, 1757 Halden</li>
+            <li><i class="fa-solid fa-phone"></i>  <strong>Telefon:</strong> 69 60 80 00</li>
+            <li><i class="fa-solid fa-envelope"></i>  <strong>E-post:</strong> halden@hiof.no</li>
+            <li><i class="fa-solid fa-clock"></i>  <strong>Åpningstider:</strong> Stenger 15:00</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Snarveier</h3>
+        <ul>
+            <li><a href="index.html#popprodukter">Produkter</a></li>
+            <li><a href="index.html#kategorier">Kategorier</a></li>
+            <li><a href="#kontakt-info">Kontakt oss</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Sosiale medier</h3>
+        <ul>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://no.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
+        </ul>
+    </section>
+
+</footer>
+</div>
+
+</body>
+</html>

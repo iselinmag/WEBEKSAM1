@@ -40,12 +40,13 @@ header {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px 0 0 5px;
+    cursor: text;
 }
 
 .search button {
     padding: 8px;
     border: 1px solid #ccc;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     cursor: pointer;
     border-radius: 0 5px 5px 0;
     margin-left: 0;
@@ -65,15 +66,18 @@ header nav ul a {
 
 .nav-liste ul li {
     font-size: 0.8em;
-    padding-right: 12px;
+    padding-right: 5px;
     padding-bottom: 5px;
     padding-top: 5px;
     cursor: pointer;
     list-style: none;
-    margin-left: 10px;
+    margin: 5px;
+    padding-left: 10px;
 }
 
-
+.indexmain {
+    margin-bottom: 30px;
+}
 
 .banner {
     background-color: #e0e0e0;
@@ -150,6 +154,10 @@ a:hover {
     margin-left: 10px;
     margin-bottom: 20px;
     margin-top: 5px;
+}
+
+.knapp button:hover {
+    background-color: #f0f0f0;
 }
 
 .produkter article {
@@ -277,7 +285,7 @@ footer {
 }
 
 .footerlogo {
-    margin-top: 20px;
+    margin-top: 30px;
     font-weight: bold;
     font-size: 1.5em;
 }
@@ -314,3 +322,300 @@ footer ul li {
     margin-bottom: 10px;
     font-size: 0.7em;
 }
+
+/*produkt.html*/
+
+.brødsmule {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    list-style: none;
+    font-size: 0.9em;
+}
+
+.brødsmule li {
+    color: #333;
+}
+
+.brødsmule a {
+    text-decoration: none;
+    color: #333;
+}
+
+.brødsmule a:hover {
+    text-decoration: underline;
+}
+
+.brødsmule li + li::before {
+    content: ">";
+    color: #343434;
+    margin: 0 0.5em;
+}
+
+.nav-product, ol {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.7em; 
+    list-style: none;
+    margin: 5px;
+}
+
+.nav-product:hover {
+    background-color: #f0f0f0;
+}
+
+.pnavn {
+    font-weight: bold;
+}
+
+.pa {
+    text-transform: uppercase;
+}
+
+.psection {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 10px;
+}
+
+.psection img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.psection h1 {
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.psection a {
+    text-decoration: line-break;
+    color: #000;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.psection p {
+    margin-bottom: 10px;
+    font-size: 0.7em;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.particle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+article a{
+    text-decoration: none;
+    color: #000;
+}
+
+aside h2 {
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+aside article img {
+    width: 100%;
+    height: auto;
+}
+
+aside article h3 {
+    font-size: bold;
+    font-size: 1em;
+
+}
+
+aside article p {
+    color: #000000;
+    font-size: 0.7em;
+}
+
+.productmain {
+    margin-bottom: 30px;
+}
+
+.checkoutmain {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: none;
+    text-align: left;
+    margin: 20px;
+}
+
+.checkoutmain h1 {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.shoppingbag h2 {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.product-card h3 {
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.product-card p {
+    font-size: 0.7em;
+    margin-bottom: 5px;
+}
+
+.personopplysninger h2 {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.personopplysninger p {
+    font-size: 0.7em;
+    margin-bottom: 3px;
+}
+
+.personopplysninger form input {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 10px;
+    padding-right: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.personopplysninger form button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.personopplysninger form button[type="reset"] {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.personopplysninger form button:hover {
+    background-color: #f0f0f0;
+}
+
+.levering h2 {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.levering p {
+    font-size: 0.8em;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.levering form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.levering input[type="radio"] {
+    margin-right: 10px;
+}
+
+.levering form label {
+    font-size: 0.7em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.betaling h2 {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.betaling p {
+    font-size: 0.8em;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.betaling label {
+    font-size: 0.7em;
+}
+
+.betaling form input {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 5px;
+    padding: 10px 200px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.betaling form button {
+    margin-right: 10px;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.betaling form button:hover {
+    background-color: #f0f0f0;
+}
+
+.betaling form p {
+    font-size: 0.8em;
+    margin-top: 10px;
+    text-transform: none;
+    font-weight: normal;
+}
+
+
+   
+
