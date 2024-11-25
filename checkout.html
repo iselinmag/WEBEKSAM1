@@ -81,23 +81,23 @@
         <p>Leveringsadresse</p>
         <form>
             <label>
-            <input type="text" id="fornavn" name="fornavn" placeholder="Fornavn*" required>
+            <input type="text" id="fornavn" name="fornavn" placeholder="Fornavn*" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
             </label>
 
             <label>
-            <input type="text" id="etternavn" name="etternavn" placeholder="Etternavn*" required>
+            <input type="text" id="etternavn" name="etternavn" placeholder="Etternavn*" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
             </label>
 
             <label>
-            <input type="text" id="adresse" name="adresse" placeholder="Gateadresse*" required>
+            <input type="text" id="adresse" name="adresse" placeholder="Gateadresse*" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
             </label>
 
             <label>
-            <input type="number" id="postnr" name="postnr" placeholder="Postnummer*" required>
+            <input type="number" id="postnr" name="postnr" placeholder="Postnummer*" pattern="[0-9]{8,12}" required>
             </label>
 
             <label>
-            <input type="text" id="poststed" name="poststed" placeholder="Poststed*" required>
+            <input type="text" id="poststed" name="poststed" placeholder="Poststed*" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
             </label>
 
 
@@ -128,11 +128,11 @@
     <p>Betal med kort</p>
     <form>
         <label for="kortnummer">Kortnummer</label>
-        <input type="text" id="kortnummer" name="kortnummer" placeholder="1234 56** **** 4567" required>
+        <input type="number" id="kortnummer" name="kortnummer" placeholder="1234 56** **** 4567" pattern="[0-9]{8,12}"  required>
         <label for="utlopsdato">Utløpsdato</label>
-        <input type="text" id="utlopsdato" name="utlopsdato" placeholder="mm / dd / yyyy" required>
+        <input type="date" id="utlopsdato" name="utlopsdato" placeholder="mm / dd / yyyy" pattern="[0-9]{8,12}" max="2023-12-31" required>
         <label for="cvc">CVC/CVV</label>
-        <input type="text" id="cvc" name="cvc" placeholder="CVC/CVV" required>
+        <input type="number" id="cvc" name="cvc" placeholder="CVC/CVV" pattern="[0-9]{8,12}" required>
 
         <p>Å betale inkl. mva.</p>
         <p>1 199kr</p>

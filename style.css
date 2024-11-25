@@ -13,14 +13,14 @@ body {
     background-color: #fff;
 }
 
-#grid-container {
-    /* No styles defined */
-}
 
 header {
     background-color: #fff;
 }
 
+#grid-container {
+    display: grid;
+}
 
 .search {
     display: flex;
@@ -35,7 +35,6 @@ header {
 
 .search input {
     margin-left: 3px;
-    flex: 0.3;
     padding: 8px;
     border: 1px solid #000000;
     border-radius: 5px 0 0 5px;
@@ -59,12 +58,12 @@ header nav ul a {
 }
 
 .logo {
-    font-size: 2em;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 .nav-liste ul li {
-    font-size: 0.8em;
+    font-size: 0.8rem;
     padding-right: 5px;
     padding-bottom: 5px;
     padding-top: 5px;
@@ -140,11 +139,11 @@ a:hover {
 #popprodukter h2 {
     margin-bottom: 20px;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 #popprodukter p {
-    font-size: 0.7em;
+    font-size: 0.7rem;
 }
 
 .knapp {
@@ -161,7 +160,7 @@ a:hover {
     cursor: pointer;
     border-radius: 40px;
     padding: 0.4rem 0.9rem;
-    font-size: 0.7em;
+    font-size: 0.7rem;
     text-align: center;
 }
 
@@ -203,13 +202,13 @@ a:hover {
 
 .produkter h3 {
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1rem;
     margin-bottom: 10px;
     margin-top: 10px;
 }
 
 .produkter p {
-    font-size: 0.8em;
+    font-size: 0.8rem;
     margin-bottom: 10px;
 }
 
@@ -227,11 +226,11 @@ a:hover {
 
 #kategorier h2 {
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 #kategorier p {
-    font-size: 0.7em;
+    font-size: 0.7rem;
     margin-bottom: 20px;
 }
 
@@ -243,7 +242,7 @@ a:hover {
 .k-kort1, .k-kort2, .k-kort3, .k-kort4, .k-kort5 {
     border: 0.5px solid #000000;
     font-weight: bold;
-    font-size: 0.7em;
+    font-size: 0.7rem;
     padding: 120px 10px;
     margin-left: 10px;
     margin-right: 10px;
@@ -260,21 +259,21 @@ a:hover {
     margin-top: 60px;
     font-weight: bold;
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin-left: 10px;
 }
 
 .anmeldelser h3 {
     margin-bottom: 10px;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1rem;
     text-align: left;
 }
 
 .anmeldelser p {
-    margin-bottom: 1em;
+    margin-bottom: 10px;
     text-align: left;
-    font-size: 0.7em;
+    font-size: 0.7rem;
 }
 
 .anmeldelser img {
@@ -304,7 +303,7 @@ footer {
 .footerlogo {
     margin-top: 30px;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 footer section {
@@ -320,13 +319,13 @@ footer h3 {
     margin-bottom: 10px;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 0.9em;
+    font-size: 0.9rem;
 }
 
 footer p {
     margin-top: 20px;
     margin-bottom: 30px;
-    font-size: 0.5em;
+    font-size: 0.5rem;
     font-weight: normal;
 }
 
@@ -337,7 +336,7 @@ footer a {
 
 footer ul li {
     margin-bottom: 10px;
-    font-size: 0.7em;
+    font-size: 0.7rem;
 }
 
 /*produkt.html*/
@@ -347,7 +346,7 @@ footer ul li {
     flex-direction: row;
     gap: 0.5em;
     list-style: none;
-    font-size: 0.9em;
+    font-size: 0.9rem;
 }
 
 .brødsmule li {
@@ -372,14 +371,12 @@ footer ul li {
 .nav-product, ol {
     display: flex;
     flex-wrap: wrap;
-    font-size: 0.7em; 
+    font-size: 0.7rem; 
     list-style: none;
     margin: 5px;
 }
 
-.nav-product:hover {
-    background-color: #f0f0f0;
-}
+
 
 .pnavn {
     font-weight: bold;
@@ -404,7 +401,7 @@ footer ul li {
 
 .psection h1 {
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1rem;
     margin-bottom: 15px;
     margin-top: 30px;
 }
@@ -418,10 +415,10 @@ footer ul li {
 
 .psection p {
     margin-bottom: 10px;
-    font-size: 0.7em;
+    font-size: 0.7rem;
 }
 
-aside {
+.paside {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -447,33 +444,35 @@ article a{
     color: #000;
 }
 
-aside h2 {
+.paside h2 {
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1rem;
     margin-bottom: 20px;
     margin-left: 15px;
     margin-top: 30px;
 }
 
-aside article img {
+.paside article img {
     width: 100%;
     height: auto;
 }
 
-aside article h3 {
+.paside article h3 {
     font-size: bold;
-    font-size: 1em;
+    font-size: 1rem;
 
 }
 
-aside article p {
+.paside article p {
     color: #000000;
-    font-size: 0.7em;
+    font-size: 0.7rem;
 }
 
 .productmain {
     margin-bottom: 30px;
 }
+
+/*checkout.html*/
 
 .checkoutmain {
     display: flex;
@@ -487,13 +486,13 @@ aside article p {
 
 .checkoutmain h1 {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     margin-bottom: 30px;
 }
 
 .shoppingbag h2 {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin-bottom: 15px;
     margin-top: 30px;
     text-transform: uppercase;
@@ -513,27 +512,27 @@ aside article p {
 
 .product-card h3 {
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1rem;
     margin-bottom: 10px;
     margin-top: 10px;
     text-transform: uppercase;
 }
 
 .product-card p {
-    font-size: 0.7em;
+    font-size: 0.7rem;
     margin-bottom: 5px;
 }
 
 .personopplysninger h2 {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin-bottom: 20px;
     margin-top: 30px;
     text-transform: uppercase;
 }
 
 .personopplysninger p {
-    font-size: 0.7em;
+    font-size: 0.7rem;
     margin-bottom: 3px;
 }
 
@@ -571,14 +570,14 @@ aside article p {
 
 .levering h2 {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin-bottom: 20px;
     margin-top: 30px;
     text-transform: uppercase;
 }
 
 .levering p {
-    font-size: 0.8em;
+    font-size: 0.8rem;
     margin-bottom: 3px;
     text-transform: uppercase;
     font-weight: bold;
@@ -594,7 +593,7 @@ aside article p {
 }
 
 .levering form label {
-    font-size: 0.7em;
+    font-size: 0.7rem;
     font-weight: bold;
     padding: 10px;
 }
@@ -605,21 +604,21 @@ aside article p {
 
 .betaling h2 {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin-bottom: 20px;
     margin-top: 30px;
     text-transform: uppercase;
 }
 
 .betaling p {
-    font-size: 0.8em;
+    font-size: 0.8rem;
     margin-bottom: 3px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 .betaling label {
-    font-size: 0.7em;
+    font-size: 0.7rem;
 }
 
 .betaling form input {
@@ -650,7 +649,7 @@ aside article p {
 }
 
 .betaling form p {
-    font-size: 0.8em;
+    font-size: 0.8rem;
     margin-top: 10px;
     text-transform: none;
     font-weight: normal;
@@ -671,7 +670,92 @@ aside article p {
 }
 
 .checkbox label {
-    font-size: 0.7em;
+    font-size: 0.7rem;
     cursor: pointer;
 }
 
+/*DESKTOP*/
+
+@media (min-width: 768px) {
+
+    #grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+        width: 100%;
+        outline: 1px solid red;
+    }
+
+
+    body {
+        background-color: aqua;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    header {
+        display: grid;
+        grid-column: 1/-1;
+        grid-row: 1;
+    }
+
+    .banner {
+        display: grid;
+        grid-column: 1/-1;
+        grid-row: 2;
+    }
+
+    #popprodukter {
+        display: grid;
+        grid-column: 1/-1;
+        grid-row: 3;
+    }
+
+    .knapp {
+        display: grid;
+        grid-column: 1/-1;
+        grid-row: 4;
+
+    }
+
+    .produkter {
+        display: grid;
+        grid-column: 1/-1;
+        grid-row: 5;
+    }
+
+    #kategorier {
+        display: grid;
+        grid-column: 1/-1;
+        grid-row: 6;
+    }
+
+    .k-kort1, .k-kort2, .k-kort3, .k-kort4, .k-kort5 {
+        display: grid;
+        grid-column: 1/-1;
+        grid-row: 7/9;
+    }
+
+    .anmeldelser {
+        display: grid;
+        grid-column: 1/-1;
+        grid-row: 10;
+    }
+
+    footer {
+        display: grid;
+        grid-column: 1/-1;
+        grid-row: 11;
+    }
+
+}
+
+
+
+/*Landskap mobil*/
+@media only screen and (orientation: landscape) {
+    body {
+        background-color: yellow;
+    }
+}
