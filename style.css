@@ -18,8 +18,6 @@ body {
 }
 
 header {
-    display: flex;
-    flex-direction: column;
     background-color: #fff;
 }
 
@@ -95,14 +93,14 @@ header nav ul a {
     text-transform: uppercase;
     font-weight: bold;
     border: none;
-    padding: 30px;
+    padding: 20px;
     cursor: pointer;
 }
 
 .banner button a {
     text-decoration: none;
     color: black;
-    padding: 30px;
+    padding: 20px;
 }
 
 .banner h1 {
@@ -149,7 +147,12 @@ a:hover {
     font-size: 0.7em;
 }
 
-
+.knapp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
 
 .knapp button {
     background-color: #fff;
@@ -157,30 +160,32 @@ a:hover {
     border: 1px solid #d3c6c6;
     cursor: pointer;
     border-radius: 40px;
-    padding: 0.5rem 1rem;
-    margin-left: 10px;
-    margin-bottom: 20px;
-    margin-top: 5px;
+    padding: 0.4rem 0.9rem;
     font-size: 0.7em;
+    text-align: center;
 }
 
 .knapp button:hover {
     background-color: #f0f0f0;
 }
 
-.produkter article {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    border: none;
-    padding: 20px 10px;
-}
+
 
 .produkter article img {
     width: 100%;
     height: auto;
+    margin-top: 10px;
+}
+
+.produkter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    border: none;
+    padding: 20px 10px;
 }
 
 .produkter article a {
@@ -534,17 +539,16 @@ aside article p {
 
 .personopplysninger form input {
     display: flex;
-    flex-wrap: wrap;
+    width: 100%;
     flex-direction: column;
-    margin-bottom: 10px;
-    padding: 10px;
-    padding-right: 190px;
+    margin-bottom: 15px;
+    padding: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 .personopplysninger form button {
-    margin-right: 10px;
+    margin-right: 20px;
     padding: 10px 20px;
     border: none;
     background-color: #000;
@@ -620,16 +624,18 @@ aside article p {
 
 .betaling form input {
     display: flex;
-    flex-wrap: wrap;
+    width: 100%;
     flex-direction: column;
-    margin-bottom: 5px;
-    padding: 10px 190px 10px 10px;
+    margin-bottom: 15px;
+    padding: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
+
+
 .betaling form button {
-    margin-right: 10px;
+    margin-right: 20px;
     margin-bottom: 15px;
     padding: 10px 20px;
     border: none;
@@ -648,5 +654,24 @@ aside article p {
     margin-top: 10px;
     text-transform: none;
     font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox input[type="checkbox"] {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    margin-top: 16px;
+}
+
+.checkbox label {
+    font-size: 0.7em;
+    cursor: pointer;
 }
 
