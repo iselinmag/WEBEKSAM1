@@ -8,6 +8,11 @@ html {
     padding: 0;
 }
 
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 body {
     font-family: sans-serif;
     background-color: #fff;
@@ -18,9 +23,6 @@ header {
     background-color: #fff;
 }
 
-#grid-container {
-    display: grid;
-}
 
 .search {
     display: flex;
@@ -74,7 +76,9 @@ header nav ul a {
 }
 
 .indexmain {
+    display: grid;
     margin-bottom: 30px;
+    grid-column: 1/4;
 }
 
 .banner {
@@ -177,8 +181,6 @@ a:hover {
 }
 
 .produkter {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     align-items: center;
@@ -682,71 +684,71 @@ article a{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
-        gap: 10px;
+        gap: 20px;
         width: 100%;
-        outline: 1px solid red;
+        margin: 0 auto;
+        max-width: 1200px;
     }
+
 
 
     body {
         background-color: aqua;
-        max-width: 1200px;
-        margin: 0 auto;
     }
 
     header {
-        display: grid;
-        grid-column: 1/-1;
-        grid-row: 1;
+        grid-column: 1 / -1;
     }
 
     .banner {
-        display: grid;
-        grid-column: 1/-1;
-        grid-row: 2;
+        grid-column: 1 / -1;
     }
 
     #popprodukter {
-        display: grid;
-        grid-column: 1/-1;
-        grid-row: 3;
+        grid-column: 1 / -1;
     }
 
     .knapp {
         display: grid;
-        grid-column: 1/-1;
-        grid-row: 4;
-
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .produkter {
         display: grid;
-        grid-column: 1/-1;
-        grid-row: 5;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        grid-column: 1 / -1;
     }
 
     #kategorier {
-        display: grid;
-        grid-column: 1/-1;
-        grid-row: 6;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 3;
     }
-
-    .k-kort1, .k-kort2, .k-kort3, .k-kort4, .k-kort5 {
-        display: grid;
-        grid-column: 1/-1;
-        grid-row: 7/9;
+  /*jeg er her nå, kategorier går over produkter!!! fiks*/
+    .k-kort1 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
     }
 
     .anmeldelser {
         display: grid;
-        grid-column: 1/-1;
-        grid-row: 10;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footerlogo {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #kontakt-info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     footer {
-        display: grid;
-        grid-column: 1/-1;
-        grid-row: 11;
+        grid-column: 1 / -1;
     }
 
 }
