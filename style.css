@@ -249,9 +249,12 @@ a:hover {
     border: 0.5px solid #000000;
     font-weight: bold;
     font-size: 0.7rem;
-    padding: 120px 10px;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.k-kort1 img, .k-kort2 img, .k-kort3 img, .k-kort4 img, .k-kort5 img {
+    width: 100%;
 }
 
 
@@ -684,10 +687,11 @@ article a{
 
 /*DESKTOP*/
 
-@media (min-width: 920px) {
+@media (min-width: 700px) {
 
     body {
         max-width: 1200px;
+        margin: 0 auto;
     }
 
     header {
@@ -696,15 +700,13 @@ article a{
         align-items: center;
     }
 
-
-
     .search input {
         margin-left: 3px;
-        padding: 15px;
+        padding: 10px;
     }
-    
+
     .search button {
-        padding: 15px;
+        padding: 10px;
     }
 
     .nav-ikoner {
@@ -712,7 +714,6 @@ article a{
         flex-direction: row;
         margin-right: 60px;
         align-items: baseline;
-        
     }
 
     .logo {
@@ -721,20 +722,10 @@ article a{
         text-align: center;
     }
 
-   
-
     .nav-liste ul {
         display: flex;
         white-space: nowrap;
     }
-
-
-
-
-
-   
-/*ER HER*/
-    
 
     .banner {
         grid-column: 1 / -1;
@@ -759,21 +750,23 @@ article a{
         margin: 1rem;
     }
 
-
-
-
-
     #kategorier {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: auto;
         align-items: stretch;
         max-width: 1200px;
+        gap: 0;
     }
 
     .k-kort1, .k-kort2, .k-kort3, .k-kort4, .k-kort5 {
         position: relative;
         background-color: rgb(115, 115, 115);
+        padding: 0%;
+        border: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
     }
 
     .k-kort1 img, .k-kort2 img, .k-kort3 img, .k-kort4 img, .k-kort5 img {
@@ -782,12 +775,10 @@ article a{
         object-fit: cover;
     }
 
-
     .k-kort1 h3, .k-kort2 h3, .k-kort3 h3, .k-kort4 h3, .k-kort5 h3 {
         position: absolute;
         color: white;
         text-transform: uppercase;
-
     }
 
     .k-kort1 {
@@ -795,13 +786,13 @@ article a{
         max-width: 386px;
         height: 300px;
     }
-    
+
     .k-kort2 {
         grid-column: 2;
         max-width: 386px;
         height: 300px;
     }
-    
+
     .k-kort3 {
         grid-column: 3;
         max-width: 386px;
@@ -814,16 +805,13 @@ article a{
         height: 300px;
         grid-row: 4;
     }
-    
+
     .k-kort5 {
         grid-column: 3;
         max-width: 300px;
         height: 300px;
         grid-row: 4;
     }
-
-    
-
 
     .over {
         grid-column: 1 / -1;
@@ -834,24 +822,16 @@ article a{
         grid-column: 1 / -1;
         grid-row: 2;
     }
-   
-
-
-
-
-
 
     .anmeldelser h2 {
         grid-column: 1 / -1;
     }
-    
+
     .anmeldelser {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(289px, 1fr)); /* Dynamisk grid */ /*AI hvordan få anmeldelsene til å ikke bryte teksten?*/
+        
     }
-    
-
-
 
     footer {
         display: grid;
@@ -877,7 +857,6 @@ article a{
         white-space: nowrap; /*AI hvordan få kontaktinformasjonen til å ikke bryte teksten?*/
     }
 
-
     .snarveier {
         grid-column: 3;
     }
@@ -897,19 +876,10 @@ article a{
     .footerikoner i { /*AI hvordan få ikonene større?*/
         font-size: 1rem;
     }
-
-
-    
-
-    
-
 }
-
-
 
 /*Landskap mobil*/
 @media only screen and (orientation: landscape) {
     body {
-        
     }
 }
