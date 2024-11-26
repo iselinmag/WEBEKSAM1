@@ -1,3 +1,4 @@
+/*GJELDER ALLE SIDER*/
 html {
     font-size: calc(1em + 1vw);
 }
@@ -19,7 +20,74 @@ header {
     background-color: #fff;
 }
 
+header nav ul a {
+    text-decoration: none;
+    color: black;
+}
 
+button:hover {
+    background-color: #f0f0f0;
+}
+
+a:hover {
+    color: #f0f0f0;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-top: 1px solid #ccc;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #fff;
+}
+
+footer section {
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 0.5rem;
+    font-weight: normal;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+    font-size: 0.7rem;
+}
+
+.footerlogo {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+article a{
+    text-decoration: none;
+    color: #000;
+}
+
+/*INDEX.HTML*/
 .search {
     display: flex;
     margin-top: 15px;
@@ -44,13 +112,6 @@ header {
     background-color: #e6e6e6;
     cursor: pointer;
     border-radius: 0 5px 5px 0;
-}
-
-
-
-header nav ul a {
-    text-decoration: none;
-    color: black;
 }
 
 .logo {
@@ -116,13 +177,7 @@ header nav ul a {
     padding-bottom: 20px;
 }
 
-button:hover {
-    background-color: #f0f0f0;
-}
 
-a:hover {
-    color: #f0f0f0;
-}
 
 .hidden {
     width: 1px;
@@ -131,10 +186,8 @@ a:hover {
     margin: -1px;
     position: absolute;
     overflow: hidden;
-    clip: rect(0, 0, 0, 0);
+    clip: rect(0, 0, 0, 0); /*AI*/
 }
-
-/*index.html*/
 
 #popprodukter {
     display: flex;
@@ -174,8 +227,6 @@ a:hover {
 .knapp button:hover {
     background-color: #f0f0f0;
 }
-
-
 
 .produkter article img {
     width: 100%;
@@ -217,7 +268,6 @@ a:hover {
     margin-bottom: 10px;
 }
 
-
 #kategorier {
     display: flex;
     flex-wrap: wrap;
@@ -256,8 +306,6 @@ a:hover {
 .k-kort1 img, .k-kort2 img, .k-kort3 img, .k-kort4 img, .k-kort5 img {
     width: 100%;
 }
-
-
 
 .anmeldelser {
     display: flex;
@@ -301,57 +349,7 @@ a:hover {
 
 
 
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    border-top: 1px solid #ccc;
-    margin-left: 10px;
-    margin-right: 10px;
-    background-color: #fff;
-}
-
-.footerlogo {
-    margin-top: 30px;
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
-footer section {
-    margin-bottom: 20px;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer h3 {
-    margin-bottom: 10px;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-}
-
-footer p {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    font-size: 0.5rem;
-    font-weight: normal;
-}
-
-footer a {
-    text-decoration: none;
-    color: black;
-}
-
-footer ul li {
-    margin-bottom: 10px;
-    font-size: 0.7rem;
-}
-
-/*produkt.html*/
-
+/*PRODUCT.HTML*/
 .brodsmule {
     display: flex;
     flex-direction: row;
@@ -373,7 +371,7 @@ footer ul li {
     text-decoration: underline;
 }
 
-.brodsmule li + li::before {
+.brodsmule li + li::before { /*AI*/
     content: ">";
     color: #343434;
     margin: 0 0.5em;
@@ -387,14 +385,12 @@ footer ul li {
     margin: 5px;
 }
 
-
-
 .pnavn {
     font-weight: bold;
 }
 
 .pa {
-    text-transform: uppercase;
+    text-transform: uppercase; 
 }
 
 .psection {
@@ -427,6 +423,7 @@ footer ul li {
 .psection p {
     margin-bottom: 10px;
     font-size: 0.7rem;
+    margin-top: 10px;
 }
 
 .paside {
@@ -448,11 +445,6 @@ footer ul li {
 .particle img {
     width: 100%;
     height: auto;
-}
-
-article a{
-    text-decoration: none;
-    color: #000;
 }
 
 .paside h2 {
@@ -479,12 +471,9 @@ article a{
     font-size: 0.7rem;
 }
 
-.productmain {
-    margin-bottom: 30px;
-}
 
-/*checkout.html*/
 
+/*CHECKOUT.HTML*/
 .checkoutmain {
     display: flex;
     flex-direction: column;
@@ -686,9 +675,9 @@ article a{
 }
 
 /*DESKTOP*/
-
 @media (min-width: 700px) {
 
+/*GJELDER ALLE SIDER*/
     body {
         max-width: 1200px;
         margin: 0 auto;
@@ -698,6 +687,8 @@ article a{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 30px;
+        margin-top: 30px;
     }
 
     .search input {
@@ -731,6 +722,51 @@ article a{
         grid-column: 1 / -1;
     }
 
+    footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .footerlogo {
+        grid-column: 1/-1;
+        text-align: left;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+    }
+
+    .footerlogo p {
+        font-size: 0.7rem;
+    }
+
+    #kontakt-info {
+        grid-column: 1;
+        white-space: nowrap; /*AI hvordan få kontaktinformasjonen til å ikke bryte teksten?*/
+    }
+
+    .snarveier {
+        grid-column: 3;
+    }
+
+    .some {
+        grid-column: 4;
+        text-align: center;
+    }
+
+    .footerikoner {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin: 30px;
+    }
+
+    .footerikoner i { /*AI hvordan få ikonene større?*/
+        font-size: 1rem;
+    }
+
+    /*INDEX.HTML*/
     #popprodukter {
         grid-column: 1 / -1;
     }
@@ -833,53 +869,54 @@ article a{
         
     }
 
-    footer {
+/*PRODUCT.HTML*/
+    .psection {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 700px 440px;
         grid-template-rows: auto;
-        gap: 20px;
-        padding: 20px;
     }
 
-    .footerlogo {
-        grid-column: 1/-1;
-        text-align: left;
-        margin-bottom: 20px;
-        font-size: 1.5rem;
+    .psection img {
+        width: 100%;
+        height: auto;
     }
 
-    .footerlogo p {
-        font-size: 0.7rem;
-    }
-
-    #kontakt-info {
+    .psection .stortbilde {
         grid-column: 1;
-        white-space: nowrap; /*AI hvordan få kontaktinformasjonen til å ikke bryte teksten?*/
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
     }
 
-    .snarveier {
-        grid-column: 3;
+    .psection .litebilder {
+        grid-column: 1;
+        grid-row: 2;  
     }
 
-    .some {
-        grid-column: 4;
-        text-align: center;
+    .psection .litebilder img {
+        max-width: 160px;
+        width: 100%;
+        height: auto;
     }
 
-    .footerikoner {
-        display: flex;
-        justify-content: center;
-        gap: 40px;
-        margin: 30px;
+    .pinfo, .pa{
+        grid-column: 2/3;
+        grid-row: 1/3;
+        margin-left: 100px;
     }
 
-    .footerikoner i { /*AI hvordan få ikonene større?*/
-        font-size: 1rem;
-    }
-}
 
-/*Landskap mobil*/
-@media only screen and (orientation: landscape) {
-    body {
+    .paside {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Gjenbrukt AIkode */
+        gap: 20px;
+        margin: 1rem;
     }
+
+    .paside h2 {
+        grid-column: 1 / -1;
+        margin-bottom: 0;
+    }
+
+
 }
