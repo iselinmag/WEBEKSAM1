@@ -25,14 +25,6 @@ header nav ul a {
     color: black;
 }
 
-button:hover {
-    background-color: #f0f0f0;
-}
-
-a:hover {
-    color: #f0f0f0;
-}
-
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -179,17 +171,6 @@ article a{
 }
 
 
-
-.hidden {
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    position: absolute;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0); /*AI*/
-}
-
 #popprodukter {
     display: flex;
     flex-direction: column;
@@ -225,9 +206,7 @@ article a{
     text-align: center;
 }
 
-.knapp button:hover {
-    background-color: #f0f0f0;
-}
+
 
 .produkter article img {
     width: 100%;
@@ -249,14 +228,6 @@ article a{
     color: black;
 }
 
-.produkter img:hover {
-    transform: scale(1.02);
-}
-
-.particle img:hover {
-    transform: scale(1.02);
-}
-
 .produkter h3 {
     font-weight: bold;
     font-size: 1rem;
@@ -267,6 +238,11 @@ article a{
 .produkter p {
     font-size: 0.8rem;
     margin-bottom: 10px;
+}
+
+.stjerner {
+    display: flex;
+    flex-direction: row;
 }
 
 #kategorier {
@@ -316,8 +292,6 @@ article a{
     color: white;
     text-transform: uppercase;
 }
-
-
 
 .anmeldelser {
     display: flex;
@@ -378,10 +352,6 @@ article a{
 .brodsmule a {
     text-decoration: none;
     color: #333;
-}
-
-.brodsmule a:hover {
-    text-decoration: underline;
 }
 
 .brodsmule li + li::before { /*AI*/
@@ -570,9 +540,6 @@ article a{
     color: #000;
 }
 
-.personopplysninger form button:hover {
-    background-color: #d8d8d8;
-}
 
 .personopplysninger{
     background-color: #fff;
@@ -663,9 +630,6 @@ article a{
     margin-bottom: 10px;
 }
 
-.divbetaling button:hover {
-    background-color: #d2d2d2;
-}
 
 .betaling form p {
     font-size: 0.8rem;
@@ -708,6 +672,10 @@ article a{
         align-items: center;
         margin-bottom: 30px;
         margin-top: 30px;
+    }
+
+    ul {
+        list-style: none;
     }
 
     .search input {
@@ -784,6 +752,39 @@ article a{
     .footerikoner i { /*AI hvordan få ikonene større?*/
         font-size: 1rem;
     }
+
+    button:hover {
+        background-color: #f0f0f0;
+    }
+    
+    a:hover {
+        color: #f0f0f0;
+    }
+
+    .knapp button:hover {
+        background-color: #f0f0f0;
+    }
+    
+    .produkter img:hover {
+        transform: scale(1.02);
+    }
+    
+    .particle img:hover {
+        transform: scale(1.02);
+    }
+
+    .divbetaling button:hover {
+        background-color: #d2d2d2;
+    }
+    
+    .personopplysninger form button:hover {
+        background-color: #d8d8d8;
+    }
+    
+    .brodsmule a:hover {
+        text-decoration: underline;
+    }
+
 
     /*INDEX.HTML*/
     #popprodukter {
