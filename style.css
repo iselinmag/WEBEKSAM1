@@ -633,11 +633,11 @@ article a{
     text-transform: uppercase;
 }
 
-.betaling p {
+.upper {
     font-size: 0.8rem;
     margin-bottom: 10px;
-    text-transform: uppercase;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .betaling label {
@@ -654,7 +654,7 @@ article a{
     border-radius: 5px;
 }
 
-.betaling form button {
+.divbetaling button {
     padding: 10px 20px;
     border: none;
     background-color: #000;
@@ -663,14 +663,13 @@ article a{
     margin-bottom: 10px;
 }
 
-.betaling form button:hover {
-    background-color: #f0f0f0;
+.divbetaling button:hover {
+    background-color: #d2d2d2;
 }
 
 .betaling form p {
     font-size: 0.8rem;
     margin-top: 10px;
-    text-transform: none;
     font-weight: normal;
     margin-bottom: 15px;
 }
@@ -681,7 +680,7 @@ article a{
     margin-bottom: 10px;
 }
 
-.checkbox input[type="checkbox"] {
+.checkbox input[type="checkbox"] { /*AI*/
     margin-right: 10px;
     width: 16px;
     height: 16px;
@@ -907,7 +906,7 @@ article a{
         margin-bottom: 20px;
     }
 
-    .psection .litebilder {
+    .psection .litebilder { 
         grid-column: 1;
         grid-row: 2;  
     }
@@ -949,14 +948,32 @@ article a{
     }
 
     .shoppingbag img {
-        grid-column: 1;
+        grid-column: 1/2;
+        grid-row: 3;
         width: 100%;
         height: auto;
     }
 
-    .shoppingbag h3, .shoppingbag p {
-        grid-column: 2;
+    .shoppingbag h3 {
+        grid-column: 2/3;
         grid-row: 1;
+    }
+
+    .pris {
+        grid-column: 2/3;
+        grid-row: 2;
+    }
+
+    .farge {
+        grid-column: 2/3;
+        grid-row: 3;
+    }
+
+    .personopplysninger {
+        border: solid 1px #dadada;
+        padding: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .personopplysninger form {
@@ -1000,6 +1017,13 @@ article a{
         margin: 0;
     }
 
+    .levering {
+        border: solid 1px #dadada;
+        padding: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
     .kortinfo {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1021,13 +1045,35 @@ article a{
 
     /*ER HER NÅ*/
 
+    .betaling {
+        border: solid 1px #dadada;
+        padding: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
     .betaling form button {
         display: flex;
         width: 100%;
-        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 15px;
         padding: 15px;
     }
+
+    .divbetaling {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .divbetaling .chp {
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+
 
 
 
