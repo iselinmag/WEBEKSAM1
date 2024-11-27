@@ -54,27 +54,83 @@
     <h2>1. Shoppingbagen din</h2>
     <article class="product-card">
         <a href="product.html">
-        <img src="https://picsum.photos/400" alt="Produktbilde"> </a>
+        <img src="https://picsum.photos/400" alt="Produktbilde 1"> </a>
+       
+        <section class="tekst">
         <h3>Product name</h3>
-        <p class="pris">Kr 1999</p>
-        <p class="farge">Farge: Beige</p>
+        <p>Kr 1999</p>
+        <p>Farge: Beige</p>
+        <label>Størrelse:
+        <select>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+        </label>
+        <label>Antall:
+        <input type="number" min="1" value="1">
+        </label>
+        </section>
+        <section class="cbutton">
+            <button class="cikoner"><i class="fa-solid fa-heart"></i></button>
+            <button class="cikoner"><i class="fa-solid fa-trash"></i></button>
+        </section>
+    </article>
+
+    <article class="product-card">
+        <a href="product.html">
+        <img src="https://picsum.photos/400" alt="Produktbilde 2"> </a>
         
+        <section class="tekst">
+            <h3>Product name</h3>
+            <p>Kr 1999</p>
+            <p>Farge: Beige</p>
+            <label>Størrelse:
+            <select>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+            </label>
+            <label>Antall:
+            <input type="number" min="1" value="1">
+            </label>
+            </section>
+            <section class="cbutton">
+                <button class="cikoner"><i class="fa-solid fa-heart"></i></button>
+                <button class="cikoner"><i class="fa-solid fa-trash"></i></button>
+            </section>
     </article>
+
     <article class="product-card">
         <a href="product.html">
-        <img src="https://picsum.photos/400" alt="Produktbilde"> </a>
-        <h3>Product name</h3>
-        <p class="pris">Kr 1999</p>
-        <p class="farge">Farge: Beige</p>
-    
-    </article>
-    <article class="product-card">
-        <a href="product.html">
-        <img src="https://picsum.photos/400" alt="Produktbilde"> </a>
-        <h3>Product name</h3>
-        <p class="pris">Kr 1999</p>
-        <p class="farge">Farge: Beige</p>
-    
+        <img src="https://picsum.photos/400" alt="Produktbilde 3"> </a>
+        
+        <section class="tekst">
+            <h3>Product name</h3>
+            <p>Kr 1999</p>
+            <p>Farge: Beige</p>
+            <label>Størrelse:
+            <select>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+            </label>
+            <label>Antall:
+            <input type="number" min="1" value="1">
+            </label>
+            </section>
+            <section class="cbutton">
+                <button class="cikoner"><i class="fa-solid fa-heart"></i></button>
+                <button class="cikoner"><i class="fa-solid fa-trash"></i></button>
+            </section>
     </article>
 </section>
 
@@ -95,11 +151,20 @@
             </label>
 
             <label class="postnr">Postnummer
-            <input type="number" id="postnr" name="postnr" placeholder="Postnummer*" pattern="[0-9]{8,12}" required>
+            <input type="text" id="postnr" name="postnr" placeholder="Postnummer*" pattern="[0-9]{8,12}" required>
             </label>
 
             <label class="poststed">Poststed
             <input type="text" id="poststed" name="poststed" placeholder="Poststed*" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+            </label>
+
+
+            <label class="epost">E-post
+                <input type="email" id="epost" name="epost" placeholder="E-post*" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+            </label>
+            <p class="cpp">Kontakt informasjon</p>
+            <label class="telefon">Telefon
+                <input type="tel" id="telefon" name="telefon" placeholder="Telefonnummer*" pattern="[0-9]{8,12}" required>
             </label>
 
 
@@ -113,22 +178,29 @@
         <h3>Leveringsvalg</h3>
         <form>
         <div class="border">
+            <p class="borderikon">59kr<i class="fa-solid fa-truck"></i></p>
             <label>
-                <input type="radio" name="levering" value="ekspresshjem"> Express Hjemlevering
+                <input type="radio" name="levering" value="ekspresshjem"> Express Hjemlevering 
             </label>
+            
             <p>Leveres innen 1-2 virkedager</p>
+            <p class="pborder">Donec porta vestibulum dui, et pellentesque ipsum eleifend et.</p>
         </div>
         <div class="border">
+            <p class="borderikon">59kr<i class="fa-brands fa-dhl"></i></p>
             <label>
                 <input type="radio" name="levering" value="utleveringssted"> Ekspress Pakke til utleveringssted
             </label>
             <p>Leveres innen 1-3 virkedager</p>
+            <p class="pborder">Donec porta vestibulum dui, et pellentesque ipsum eleifend et.</p>
         </div>
         <div class="border">
+            <p class="borderikon">Gratis<i class="fa-solid fa-box"></i></p>
             <label>
                 <input type="radio" name="levering" value="hjemlevering"> Standard Hjemleverings
             </label>
             <p>Leveres innen 3-5 virkedager</p>
+            <p class="pborder">Donec porta vestibulum dui, et pellentesque ipsum eleifend et.</p>
         </div>
         </form>
  </section>
@@ -139,13 +211,13 @@
     <form>
         <div class="kortinfo">
         <label class="kortnr">Kortnummer
-        <input type="number" id="kortnummer" name="kortnummer" placeholder="1234 56** **** 4567" pattern="[0-9]{8,12}"  required>
+        <input type="text" id="kortnummer" name="kortnummer" placeholder="1234 56** **** 4567" pattern="[0-9]{8,12}"  required>
         </label>
         <label class="utlopsdato">Utløpsdato
-        <input type="date" id="utlopsdato" name="utlopsdato" placeholder="mm / dd / yyyy" pattern="[0-9]{8,12}" max="2023-12-31" required>
+        <input type="date" id="utlopsdato" name="utlopsdato" max="2023-12-31" required>
         </label>
         <label class="cvc">CVC/CVV
-        <input type="number" id="cvc" name="cvc" placeholder="CVC/CVV" pattern="[0-9]{8,12}" required>
+        <input type="text" id="cvc" name="cvc" placeholder="CVC/CVV" pattern="[0-9]{8,12}" required>
         </label>
         </div>
 

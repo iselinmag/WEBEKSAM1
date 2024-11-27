@@ -149,6 +149,7 @@ ul li {
     padding: 3rem 2rem 2rem;
     margin: 10px;
     margin-top: 20px;
+    border-radius: 30px;
 }
 
 .banner button {
@@ -159,6 +160,7 @@ ul li {
     border: none;
     padding: 20px;
     cursor: pointer;
+    border-radius: 30px;
 }
 
 .banner button a {
@@ -217,6 +219,7 @@ ul li {
     width: 100%;
     height: auto;
     margin-top: 10px;
+    border-radius: 20px;
 }
 
 .produkter {
@@ -285,7 +288,6 @@ ul li {
 }
 
 .k-kort1, .k-kort2, .k-kort3, .k-kort4, .k-kort5 {
-    border: none;
     font-weight: bold;
     font-size: 0.7rem;
     margin-left: 10px;
@@ -297,6 +299,7 @@ ul li {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 20px;
 }
 
 .k-kort1 h3, .k-kort2 h3, .k-kort3 h3, .k-kort4 h3, .k-kort5 h3 {
@@ -343,6 +346,7 @@ ul li {
     border: 1px solid #ccc;
     padding: 15px;
     margin: 10px;
+    border-radius: 20px;
 }
 
 
@@ -527,6 +531,16 @@ ul li {
     margin-bottom: 30px;
 }
 
+.product-card {
+    display: flex;
+    flex-direction: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+
+
 .shoppingbag h2 {
     font-weight: bold;
     font-size: 1.2rem;
@@ -541,6 +555,42 @@ ul li {
     margin-bottom: 10px;
     margin-top: 10px;
     text-transform: uppercase;
+}
+
+.tekst {
+    display: flex;
+    flex-direction: column;
+}
+
+.tekst label {
+    font-size: 0.7rem;
+}
+
+.tekst select, .tekst input {
+    padding: 5px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #ececec; 
+}
+
+.tekst input {
+    border: 1px solid #a8a8a8; 
+}
+
+
+.cikoner {
+    display: flex;
+    flex-direction: row;
+}
+
+.cbutton button {
+    background-color: #fff;
+    border: none;
+    font-size: 1rem;
+    margin: 20px;
+    cursor: pointer;
 }
  
 .product-card img {
@@ -627,10 +677,6 @@ ul li {
     margin-bottom: 5px;
 }
 
-.levering input[type="radio"] {
-    margin-right: 10px;
-}
-
 .levering form label {
     font-size: 0.7rem;
     font-weight: bold;
@@ -646,6 +692,24 @@ ul li {
     padding: 10px;
     margin: 10px; 
 }
+
+.levering .pborder {
+    color: #000;
+    font-size: 0.7rem;
+    margin-left: 10px;
+}
+
+.levering .borderikon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.levering .borderikon i {
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+
+
 
 .betaling h2 {
     font-weight: bold;
@@ -727,6 +791,7 @@ ul li {
         align-items: center;
         margin-bottom: 30px;
         margin-top: 30px;
+        max-width: 1200px;
     }
 
     ul {
@@ -750,7 +815,6 @@ ul li {
     .nav-ikoner {
         display: flex;
         flex-direction: row;
-        margin-right: 60px;
         align-items: baseline;
     }
 
@@ -961,6 +1025,7 @@ ul li {
         display: grid;
         grid-template-columns: 700px 440px;
         grid-template-rows: auto;
+        max-width: 1200px;
     }
 
     .psection img {
@@ -1016,33 +1081,17 @@ ul li {
         display: grid;
     }
 
-    .shoppingbag article {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
+    .shoppingbag {
+        display: flex;
+        flex-direction: column;
         gap: 20px;
     }
 
-    .shoppingbag img {
-        grid-column: 1/2;
-        grid-row: 3;
-        width: 100%;
-        height: auto;
-    }
-
-    .shoppingbag h3 {
-        grid-column: 2/3;
-        grid-row: 1;
-    }
-
-    .pris {
-        grid-column: 2/3;
-        grid-row: 2;
-    }
-
-    .farge {
-        grid-column: 2/3;
-        grid-row: 3;
+    .product-card {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        max-width: 1200px;
     }
 
     .personopplysninger {
@@ -1075,12 +1124,29 @@ ul li {
         grid-column: 1 / -1;
     }
 
+    .cpp {
+        grid-column: 1 / -1;
+    }
+
+    .epost {
+        grid-column: 1 / -1;
+        margin-right: 10px;
+        grid-row: 6;
+    }
+
+    .telefon {
+        grid-column: 1 / -1;
+        grid-row: 7;
+    }
+
     .submit {
         grid-column: 1 / -1;
+        grid-row: 8;
     }
 
     .reset {
         grid-column: 1 / -1;
+        grid-row: 9;
     }
 
     .personopplysninger label {
@@ -1148,6 +1214,12 @@ ul li {
         font-weight: bold;
         font-size: 1rem;
     }
+
+    .tekst label {
+        font-size: 0.7rem;
+    }
+
+
 
 
 
