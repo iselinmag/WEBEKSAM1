@@ -388,6 +388,37 @@ ul li {
     text-transform: uppercase; 
 }
 
+.storrelse {
+    background-color: rgb(239, 239, 239);
+    color: rgb(0, 0, 0);
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-right: 58px;
+    margin-top: 30px;
+}
+
+.vogn {
+    flex: 1;
+    background-color: #000;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 0;
+    border-radius: 5px;
+}
+
+.hjerte {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: white;
+    border: 1px solid #000;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 .psection {
     display: flex;
     flex-direction: column;
@@ -440,13 +471,25 @@ ul li {
 .particle img {
     width: 100%;
     height: auto;
+    border-radius: 20px;
 }
+
+.paside p {
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.paside a {
+    text-decoration: none;
+}
+
 
 .paside h2 {
     font-weight: bold;
     font-size: 1rem;
     margin-bottom: 20px;
-    margin-left: 15px;
+    margin-left: 10px;
     margin-top: 30px;
 }
 
@@ -932,6 +975,7 @@ ul li {
         margin-bottom: 20px;
     }
 
+
     .psection .litebilder { 
         grid-column: 1;
         grid-row: 2;  
@@ -954,52 +998,17 @@ ul li {
         flex-direction: row;
     }
 
-    .vogn, .hjerte {
-   
-    }
-
-
-
     .storrelse {
-        background-color: rgb(239, 239, 239);
-        color: rgb(0, 0, 0);
-        padding: 12px;
-        border-radius: 5px;
-        cursor: pointer;
         padding-right: 285px;
-        margin-top: 30px;
     }
 
     .vogn {
-        flex: 1;
-        background-color: #000;
-        color: white;
-        padding: 12px;
-        border: none;
-        cursor: pointer;
-        margin-top: 10px;
         margin-right: 0;
     }
 
-    .hjerte {
-        margin-top: 10px;
-        padding: 12px;
-        background-color: white;
-        border: 1px solid #000;
-        cursor: pointer;
-    }
-
-
-    .paside {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Gjenbrukt AIkode */
-        gap: 20px;
-        margin: 1rem;
-    }
-
-    .paside h2 {
-        grid-column: 1 / -1;
-        margin-bottom: 0;
+    .asideflex {
+        display: flex;
+        flex-direction: row;
     }
 
     /*CHECKOUT.HTML*/
