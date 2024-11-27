@@ -62,7 +62,7 @@ footer h3 {
 footer p {
     margin-top: 20px;
     margin-bottom: 30px;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     font-weight: normal;
 }
 
@@ -151,6 +151,7 @@ article a{
     justify-content: right;
     padding: 3rem 2rem 2rem;
     margin: 10px;
+    margin-top: 20px;
 }
 
 .banner button {
@@ -296,16 +297,27 @@ article a{
 }
 
 .k-kort1, .k-kort2, .k-kort3, .k-kort4, .k-kort5 {
-    border: 0.5px solid #000000;
+    border: none;
     font-weight: bold;
     font-size: 0.7rem;
     margin-left: 10px;
     margin-right: 10px;
+    position: relative;
 }
 
 .k-kort1 img, .k-kort2 img, .k-kort3 img, .k-kort4 img, .k-kort5 img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
+.k-kort1 h3, .k-kort2 h3, .k-kort3 h3, .k-kort4 h3, .k-kort5 h3 {
+    position: absolute;
+    color: white;
+    text-transform: uppercase;
+}
+
+
 
 .anmeldelser {
     display: flex;
@@ -356,6 +368,7 @@ article a{
     gap: 0.5em;
     list-style: none;
     font-size: 0.9rem;
+    margin-top: 20px;
 }
 
 .brodsmule li {
@@ -480,13 +493,12 @@ article a{
     border: none;
     text-align: left;
     margin: 20px;
-    align-items: left;
-    align-content: left;
 }
 
 .checkoutmain h1 {
     font-weight: bold;
     font-size: 1.5rem;
+    margin-top: 20px;
     margin-bottom: 30px;
 }
 
@@ -498,29 +510,22 @@ article a{
     text-transform: uppercase;
 }
 
-.product-card {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
- 
-.product-card img {
-    width: 100%;
-    height: auto;
-    margin-top: 10px;
-}
-
-.product-card h3 {
+.shoppingbag h3 {
     font-weight: bold;
     font-size: 1rem;
     margin-bottom: 10px;
     margin-top: 10px;
     text-transform: uppercase;
 }
+ 
+.product-card img {
+    width: 100%;
+    height: auto;
+}
 
-.product-card p {
+.shoppingbag p {
     font-size: 0.7rem;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .personopplysninger h2 {
@@ -532,8 +537,13 @@ article a{
 }
 
 .personopplysninger p {
-    font-size: 0.7rem;
-    margin-bottom: 3px;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.personopplysninger label {
+    font-size: 0.6rem;
+    font-weight: bold;
 }
 
 .personopplysninger form input {
@@ -555,13 +565,13 @@ article a{
     cursor: pointer;
 }
 
-.personopplysninger form button[type="reset"] {
-    background-color: #f0f0f0;
+.personopplysninger .reset {
+    background-color: #ffffff;
     color: #000;
 }
 
 .personopplysninger form button:hover {
-    background-color: #f0f0f0;
+    background-color: #d8d8d8;
 }
 
 .personopplysninger{
@@ -576,16 +586,23 @@ article a{
     text-transform: uppercase;
 }
 
-.levering p {
+.levering h3 {
     font-size: 0.8rem;
     margin-bottom: 3px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
+.levering p {
+    font-size: 0.6rem;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    color: #333;
+}
+
 .levering form label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .levering input[type="radio"] {
@@ -602,6 +619,12 @@ article a{
     background-color: #fff;
 }
 
+.border {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px; 
+}
+
 .betaling h2 {
     font-weight: bold;
     font-size: 1.2rem;
@@ -612,7 +635,7 @@ article a{
 
 .betaling p {
     font-size: 0.8rem;
-    margin-bottom: 3px;
+    margin-bottom: 10px;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -631,17 +654,13 @@ article a{
     border-radius: 5px;
 }
 
-
-
 .betaling form button {
-    margin-right: 20px;
-    margin-bottom: 15px;
     padding: 10px 20px;
     border: none;
     background-color: #000;
     color: #fff;
     cursor: pointer;
-    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .betaling form button:hover {
@@ -673,6 +692,7 @@ article a{
     font-size: 0.7rem;
     cursor: pointer;
 }
+
 
 /*DESKTOP*/
 @media (min-width: 700px) {
@@ -802,7 +822,6 @@ article a{
         border: none;
         margin: 0;
         padding: 0;
-        position: relative;
     }
 
     .k-kort1 img, .k-kort2 img, .k-kort3 img, .k-kort4 img, .k-kort5 img {
@@ -901,7 +920,6 @@ article a{
 
     .pinfo, .pa{
         grid-column: 2/3;
-        grid-row: 1/3;
         margin-left: 100px;
     }
 
@@ -917,6 +935,103 @@ article a{
         grid-column: 1 / -1;
         margin-bottom: 0;
     }
+
+    /*CHECKOUT.HTML*/
+    .checkoutmain {
+        display: grid;
+    }
+
+    .shoppingbag article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+    .shoppingbag img {
+        grid-column: 1;
+        width: 100%;
+        height: auto;
+    }
+
+    .shoppingbag h3, .shoppingbag p {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .personopplysninger form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .fornavn, .poststed {
+        grid-column: 1;
+        margin-right: 10px;
+    }
+
+    .poststed {
+        grid-row: 3;
+    }
+
+    .etternavn, .postnr {
+        grid-column: 2;
+    }
+
+    .adresse {
+        grid-column: 1 / -1;
+    }
+
+    .submit {
+        grid-column: 1 / -1;
+    }
+
+    .reset {
+        grid-column: 1 / -1;
+    }
+
+    .personopplysninger label {
+        font-size: 0.6rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .personopplysninger form button {
+        margin: 0;
+    }
+
+    .kortinfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+
+    .kortnr {
+        grid-column: 1/-1; 
+    }
+
+    .utlopsdato {
+        grid-column: 1;
+    }
+
+    .cvc {
+        grid-column: 2;
+    }
+
+    /*ER HER NÅ*/
+
+    .betaling form button {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+
+
+
+
 
 
 }

@@ -56,7 +56,7 @@
         <img src="https://picsum.photos/400" alt="Produktbilde"> </a>
         <h3>Product name</h3>
         <p>Kr 1999</p>
-        <p>Farge: beige</p>
+        <p>Farge: Beige</p>
         
     </article>
     <article class="product-card">
@@ -64,7 +64,7 @@
         <img src="https://picsum.photos/400" alt="Produktbilde"> </a>
         <h3>Product name</h3>
         <p>Kr 1999</p>
-        <p>Farge: beige</p>
+        <p>Farge: Beige</p>
     
     </article>
     <article class="product-card">
@@ -72,7 +72,7 @@
         <img src="https://picsum.photos/400" alt="Produktbilde"> </a>
         <h3>Product name</h3>
         <p>Kr 1999</p>
-        <p>Farge: beige</p>
+        <p>Farge: Beige</p>
     
     </article>
 
@@ -82,46 +82,54 @@
         <h2>2. Dine opplysninger</h2>
         <p>Leveringsadresse</p>
         <form>
-            <label>
+            <label class="fornavn">Fornavn
             <input type="text" id="fornavn" name="fornavn" placeholder="Fornavn*" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
             </label>
 
-            <label>
+            <label class="etternavn">Etternavn
             <input type="text" id="etternavn" name="etternavn" placeholder="Etternavn*" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
             </label>
 
-            <label>
+            <label class="adresse">Gateadresse
             <input type="text" id="adresse" name="adresse" placeholder="Gateadresse*" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
             </label>
 
-            <label>
+            <label class="postnr">Postnummer
             <input type="number" id="postnr" name="postnr" placeholder="Postnummer*" pattern="[0-9]{8,12}" required>
             </label>
 
-            <label>
+            <label class="poststed">Poststed
             <input type="text" id="poststed" name="poststed" placeholder="Poststed*" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
             </label>
 
 
-            <button type="submit">Lagre</button>
-            <button type="reset">Avbryt</button>
+            <button type="submit" class="submit">Lagre</button>
+            <button type="reset" class="reset">Avbryt</button>
         </form>
     </section>
 
     <section class="levering">
         <h2>3. Levering</h2>
-        <p>Leveringsvalg</p>
+        <h3>Leveringsvalg</h3>
         <form>
+        <div class="border">
             <label>
                 <input type="radio" name="levering" value="ekspresshjem"> Express Hjemlevering
             </label>
+            <p>Leveres innen 1-2 virkedager</p>
+        </div>
+        <div class="border">
             <label>
                 <input type="radio" name="levering" value="utleveringssted"> Ekspress Pakke til utleveringssted
             </label>
+            <p>Leveres innen 1-3 virkedager</p>
+        </div>
+        <div class="border">
             <label>
                 <input type="radio" name="levering" value="hjemlevering"> Standard Hjemleverings
             </label>
-
+            <p>Leveres innen 3-5 virkedager</p>
+        </div>
         </form>
  </section>
 
@@ -129,13 +137,20 @@
     <h2>4. Betaling</h2>
     <p>Betal med kort</p>
     <form>
-        <label for="kortnummer">Kortnummer</label>
+        <div class="kortinfo">
+        <label class="kortnr">Kortnummer
         <input type="number" id="kortnummer" name="kortnummer" placeholder="1234 56** **** 4567" pattern="[0-9]{8,12}"  required>
-        <label for="utlopsdato">Utløpsdato</label>
+        </label>
+        <label class="utlopsdato">Utløpsdato
         <input type="date" id="utlopsdato" name="utlopsdato" placeholder="mm / dd / yyyy" pattern="[0-9]{8,12}" max="2023-12-31" required>
-        <label for="cvc">CVC/CVV</label>
+        </label>
+        <label class="cvc">CVC/CVV
         <input type="number" id="cvc" name="cvc" placeholder="CVC/CVV" pattern="[0-9]{8,12}" required>
+        </label>
+        </div>
 
+
+        
         <p>Å betale inkl. mva.</p>
         <p>1 199kr</p>
         <button type="submit">Fullfør kjøp</button>
@@ -148,6 +163,7 @@
         <label class="checkbox">
         <input type="checkbox" name="tekstmelding">Ja takk! Send nyhetsbrev til meg.
         </label>
+        
     </form>
  </section>
 </main>
