@@ -140,31 +140,32 @@
         <h2>2. Dine opplysninger</h2>
         <p>Leveringsadresse</p>
         <form>
-            <label class="fornavn">Fornavn
+            <label class="fornavn" for="fornavn">Fornavn
             <input type="text" id="fornavn" name="fornavn" placeholder="Fornavn*" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
             </label>
 
-            <label class="etternavn">Etternavn
+            <label class="etternavn" for="etternavn">Etternavn
             <input type="text" id="etternavn" name="etternavn" placeholder="Etternavn*" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
             </label>
 
-            <label class="adresse">Gateadresse
+            <label class="adresse" for="adresse">Gateadresse
             <input type="text" id="adresse" name="adresse" placeholder="Gateadresse*" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
             </label>
 
-            <label class="postnr">Postnummer
+            <label class="postnr" for="postnr">Postnummer
             <input type="text" id="postnr" name="postnr" placeholder="Postnummer*" pattern="[0-9]{1,10}" required>
             </label>
 
-            <label class="poststed">Poststed
+            <label class="poststed" for="poststed">Poststed
             <input type="text" id="poststed" name="poststed" placeholder="Poststed*" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
             </label>
 
-            <label class="epost">E-post
+            <p class="cpp">Kontakt informasjon</p>
+            <label class="epost" for="epost">E-post
                 <input type="email" id="epost" name="epost" placeholder="E-post*" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
             </label>
-            <p class="cpp">Kontakt informasjon</p>
-            <label class="telefon">Telefon
+            
+            <label class="telefon" for="telefon">Telefon
                 <input type="tel" id="telefon" name="telefon" placeholder="Telefonnummer*" pattern="[0-9]{8,12}" required>
             </label>
 
@@ -259,6 +260,7 @@
             <li><a href="index.html#popprodukter">Produkter</a></li>
             <li><a href="index.html#kategorier">Kategorier</a></li>
             <li><a href="#kontakt-info">Kontakt oss</a></li>
+            <li><a href="WCAG/WCAG-sjekkliste.pdf" target="_blank">WCAG-sjekkliste PDF</a></li>
         </ul>
     </section>
     <section class="some">
