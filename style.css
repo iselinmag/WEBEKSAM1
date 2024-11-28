@@ -148,6 +148,10 @@ ul li {
     list-style: none;
 }
 
+.some ul li a i {
+    font-size: 1rem;
+}
+
 /*INDEX.HTML*/
 
 .banner {
@@ -901,10 +905,6 @@ ul li {
         text-align: left;
         margin-bottom: 20px;
         font-size: 1.5rem;
-    }
-
-    .footerlogo p {
-        font-size: 0.7rem;
     }
 
     #kontakt-info {
