@@ -153,7 +153,6 @@ ul li {
 }
 
 /*INDEX.HTML*/
-
 .banner {
     background-color: #e0e0e0;
     text-align: right;
@@ -232,8 +231,6 @@ ul li {
     text-align: center;
 }
 
-
-
 .produkter article img {
     width: 100%;
     height: auto;
@@ -276,7 +273,6 @@ ul li {
 .stjernetekst {
     font-size: 0.4rem;
     color: rgb(94, 94, 94);
-
 }
 
 #kategorier {
@@ -310,13 +306,11 @@ ul li {
     font-size: 0.7rem;
     margin-left: 10px;
     margin-right: 10px;
-    position: relative;
 }
 
 .k-kort1 img, .k-kort2 img, .k-kort3 img, .k-kort4 img, .k-kort5 img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     border-radius: 20px;
 }
 
@@ -326,10 +320,10 @@ ul li {
     text-transform: uppercase;
 }
 
-.scroll{
+.scroll{ /*AI, promt og resultat i PDF*/
     display: flex;
     overflow-x: auto; 
-    scroll-snap-type: x mandatory; /*AI generert ferdig vscode*/
+    scroll-snap-type: x mandatory; 
 }
 
 .anmeldelser h2 {
@@ -366,6 +360,8 @@ ul li {
     padding: 15px;
     margin: 10px;
     border-radius: 20px;
+    max-width: 289px;
+    min-width: 190px;
 }
 
 
@@ -389,7 +385,7 @@ ul li {
     color: #333;
 }
 
-.brodsmule li + li::before { /*AI*/
+.brodsmule li + li::before { /*AI, promt og resultat i PDF*/
     content: ">";
     color: #343434;
     margin: 0 0.5em;
@@ -494,11 +490,11 @@ ul li {
     margin-left: 3px;
 }
 
-.scroll2 {
+.scroll2 { /*AI, promt og resultat i PDF*/
     display: flex;
     text-align: left;
     overflow-x: auto;
-    scroll-snap-type: x mandatory; /*AI generert ferdig vscode*/
+    scroll-snap-type: x mandatory;
     width: 100%;
 }
 
@@ -549,10 +545,10 @@ ul li {
     font-size: 0.7rem;
 }
 
-.scroll2 {
+.scroll2 { /*AI, promt og resultat i PDF*/
     display: flex;
-    overflow-x: auto; /*AI*/
-    scroll-snap-type: x mandatory; /*AI generert ferdig vscode*/
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
 }
 
 
@@ -800,7 +796,7 @@ ul li {
     margin-bottom: 10px;
 }
 
-.checkbox input[type="checkbox"] { /*AI*/
+.checkbox1 input, .checkbox2 input {
     margin-right: 10px;
     width: 16px;
     height: 16px;
@@ -909,7 +905,7 @@ ul li {
 
     #kontakt-info {
         grid-column: 1;
-        white-space: nowrap; /*AI hvordan få kontaktinformasjonen til å ikke bryte teksten?*/
+        white-space: nowrap;
     }
 
     .snarveier {
@@ -928,10 +924,11 @@ ul li {
         margin: 30px;
     }
 
-    .footerikoner i { /*AI hvordan få ikonene større?*/
+    .footerikoner i { 
         font-size: 1rem;
     }
 
+    /*All hover effekt er tatt fra inspirasjonskode AI, prompt og resultat i PDF*/
     .nav-ikoner a:hover {
         transform: scale(1.2);
     }
@@ -987,7 +984,7 @@ ul li {
 
     .produkter {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Dynamisk grid AI*/
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /*https://dev.to/musselmanth/the-dynamic-css-grid-configuration-ive-been-looking-for-1ogd*/
     }
 
     .produkter article img {
@@ -1072,10 +1069,13 @@ ul li {
         border-radius: 20px;
         margin-bottom: 40px;
         margin-left: 20px;
+        max-width: 289px;
+        min-width: 250px;
     }
 
     .anmeldelser img {
-        min-width: 200px;
+        max-width: 289px;
+        min-width: 190px;
         margin: 10px;
     }
 
@@ -1134,6 +1134,11 @@ ul li {
     .asideflex {
         display: flex;
         flex-direction: row;
+    }
+
+    .particle img {
+        max-width: 289px;
+        min-width: 190px;
     }
 
     .particle img {
@@ -1249,8 +1254,6 @@ ul li {
         grid-column: 2;
     }
 
-    /*ER HER NÅ*/
-
     .betaling {
         border: solid 1px #dadada;
         padding: 30px;
@@ -1287,7 +1290,7 @@ ul li {
 /*TABLET*/
 @media only screen and (max-width: 1000px) and (min-width: 600px) {
     #kategorier {
-        grid-template-columns: 1fr 1fr; /* 2 kolonner for smartbrett */
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
     }
 
