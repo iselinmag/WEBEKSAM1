@@ -484,7 +484,6 @@ ul li {
     padding: 10px;
     margin: 40px;
     margin-left: 3px;
-    width: 100%;
 }
 
 
@@ -501,7 +500,7 @@ ul li {
 
 .particle img {
     display: flex;
-    max-width: 100%;
+    max-width: 200px;
     height: auto;
     border-radius: 20px;
 }
@@ -1049,8 +1048,14 @@ ul li {
     }
 
     .anmeldelser article {
-        border-radius: 30px;
+        border-radius: 20px;
         margin-bottom: 40px;
+        margin-left: 20px;
+    }
+
+    .anmeldelser img {
+        min-width: 200px;
+        margin: 10px;
     }
 
     /*PRODUCT.HTML*/
@@ -1108,6 +1113,10 @@ ul li {
     .asideflex {
         display: flex;
         flex-direction: row;
+    }
+
+    .particle img {
+        min-width: 200px;
     }
 
     /*CHECKOUT.HTML*/
