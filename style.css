@@ -438,6 +438,10 @@ ul li {
     border-radius: 5px;
 }
 
+.hjerte i {
+    color: #000;
+}
+
 .plinje {
     display: flex;
     flex-direction: column;
@@ -509,6 +513,10 @@ ul li {
 
 .paside a {
     text-decoration: none;
+}
+
+.cikoner i {
+    color: #000;
 }
 
 
