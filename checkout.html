@@ -184,7 +184,6 @@
             <label>
                 <input type="radio" name="levering" value="ekspresshjem"> Express Hjemlevering 
             </label>
-            
             <p>Leveres innen 1-2 virkedager</p>
             <p class="pborder">Donec porta vestibulum dui, et pellentesque ipsum eleifend et.</p>
         </div>
@@ -193,8 +192,7 @@
             <label>
                 <input type="radio" name="levering" value="utleveringssted"> Ekspress Pakke til utleveringssted
             </label>
-            <p>Leveres innen 1-3 virkedager</p>
-            
+            <p>Leveres innen 1-3 virkedager</p>         
         </div>
         <div class="border">
             <p class="borderikon">Gratis<i class="fa-solid fa-box"></i></p>
@@ -213,13 +211,13 @@
     <form>
         <div class="kortinfo">
         <label class="kortnr">Kortnummer
-        <input type="text" id="kortnummer" name="kortnummer" placeholder="1234 56** **** 4567" pattern="[0-9]{8,12}"  required>
+            <input type="number" id="kortnummer" name="kortnummer" placeholder="1234 56** **** 4567" pattern="[0-9]{8,12}"  required>
         </label>
         <label class="utlopsdato">Utløpsdato
-        <input type="date" id="utlopsdato" name="utlopsdato" max="2023-12-31" required>
+            <input type="date" id="utlopsdato" name="utlopsdato" max="2023-12-31" required>
         </label>
         <label class="cvc">CVC/CVV
-        <input type="text" id="cvc" name="cvc" placeholder="CVC/CVV" pattern="[0-9]{8,12}" required>
+            <input type="number" id="cvc" name="cvc" placeholder="CVC/CVV" pattern="[0-9]{8,12}" required>
         </label>
         </div>
 
@@ -232,10 +230,10 @@
 
 
         <label class="checkbox">
-        <input type="checkbox" name="vilkår" required>Ja, jeg godtar vilkårene.
+            <input type="checkbox" name="vilkår" required>Ja, jeg godtar vilkårene.
         </label>
         <label class="checkbox">
-        <input type="checkbox" name="tekstmelding">Ja takk! Send nyhetsbrev til meg.
+            <input type="checkbox" name="tekstmelding">Ja takk! Send nyhetsbrev til meg.
         </label>
         </div>
         
@@ -244,12 +242,10 @@
 </main>
 
 <footer>
-
     <section class="footerlogo">
         <a href="index.html">Logo</a>
         <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
     </section>
-
     <section id="kontakt-info">
         <h3>Kontakt</h3>
         <ul>
@@ -259,8 +255,6 @@
             <li><i class="fa-solid fa-clock"></i>  <strong>Åpningstider:</strong> Stenger 15:00</li>
         </ul>
     </section>
-
-
     <section class="snarveier">
         <h3>Snarveier</h3>
         <ul>
@@ -269,7 +263,6 @@
             <li><a href="#kontakt-info">Kontakt oss</a></li>
         </ul>
     </section>
-
     <section class="some">
         <h3>Sosiale medier</h3>
         <ul class="footerikoner">
@@ -279,8 +272,7 @@
             <li><a href="https://no.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
         </ul>
     </section>
-
-</footer>
+</footer>s
 </div>
 
 </body>

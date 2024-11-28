@@ -810,13 +810,11 @@ ul li {
 /*DESKTOP*/
 @media only screen and (min-width: 600px) {
 
-/*GJELDER ALLE SIDER*/
+    /*GJELDER ALLE SIDER*/
     body {
         max-width: 1200px;
         margin: 0 auto;
     }
-
-
 
     .header {
         flex-wrap: wrap;
@@ -850,9 +848,7 @@ ul li {
     .nav-ikoner {
         gap: 20px;
         align-items: center;
-        
     }
-
 
     .nav-liste ul {
         display: flex;
@@ -868,7 +864,6 @@ ul li {
         max-width: 30%;
         align-items: center;
     }
-
 
     .banner {
         grid-column: 1 / -1;
@@ -920,13 +915,12 @@ ul li {
 
     .nav-ikoner a:hover {
         transform: scale(1.2);
-
     }
 
     button:hover {
         background-color: #afafaf;
     }
-    
+
     a:hover {
         color: #afafaf;
         text-decoration: underline;
@@ -935,11 +929,11 @@ ul li {
     .knapp button:hover {
         background-color: #f0f0f0;
     }
-    
+
     .produkter img:hover {
         transform: scale(1.02);
     }
-    
+
     .particle img:hover {
         transform: scale(1.02);
     }
@@ -947,15 +941,14 @@ ul li {
     .divbetaling button:hover {
         background-color: #d2d2d2;
     }
-    
+
     .personopplysninger form button:hover {
         background-color: #d8d8d8;
     }
-    
+
     .brodsmule a:hover {
         text-decoration: underline;
     }
-
 
     /*INDEX.HTML*/
     .banner, .banner button {
@@ -981,7 +974,6 @@ ul li {
     .produkter article img {
         border-radius: 30px;
     }
-
 
     #kategorier {
         display: grid;
@@ -1020,26 +1012,21 @@ ul li {
     .k-kort2 {
         grid-column: 2;
         grid-row: 3;
-      
     }
 
     .k-kort3 {
         grid-column: 3;
         grid-row: 3 / span 2;
-        
     }
 
     .k-kort4 {
         grid-column: 1 / span 2; /*AI*/
         grid-row: 4 / span 2;
-        
-
     }
 
     .k-kort5 {
         grid-column: 3;
         grid-row: 5;
-       
     }
 
     .over {
@@ -1059,7 +1046,6 @@ ul li {
     .anmeldelser {
         display: grid;
         grid-template-columns: 1fr; /* Dynamisk grid */ /*AI hvordan få anmeldelsene til å ikke bryte teksten?*/
-        
     }
 
     .anmeldelser article {
@@ -1067,7 +1053,7 @@ ul li {
         margin-bottom: 40px;
     }
 
-/*PRODUCT.HTML*/
+    /*PRODUCT.HTML*/
     .psection {
         display: grid;
         grid-template-columns: 500px 1fr;
@@ -1088,10 +1074,9 @@ ul li {
         margin-bottom: 20px;
     }
 
-
-    .psection .litebilder { 
+    .psection .litebilder {
         grid-column: 1;
-        grid-row: 2;  
+        grid-row: 2;
     }
 
     .psection .litebilder img {
@@ -1119,8 +1104,6 @@ ul li {
     .vogn {
         margin-right: 0;
     }
-
-    
 
     .asideflex {
         display: flex;
@@ -1225,7 +1208,7 @@ ul li {
     }
 
     .kortnr {
-        grid-column: 1/-1; 
+        grid-column: 1/-1;
     }
 
     .utlopsdato {
@@ -1269,15 +1252,12 @@ ul li {
     .tekst label {
         font-size: 0.7rem;
     }
-
-
-
 }
 
 /*TABLET*/
 @media only screen and (max-width: 1000px) and (min-width: 600px) {
     #kategorier {
-        grid-template-columns: repeat(2, 1fr); /* 2 kolonner for smartbrett */
+        grid-template-columns: 1fr 1fr; /* 2 kolonner for smartbrett */
         grid-template-rows: auto;
     }
 
@@ -1311,9 +1291,8 @@ ul li {
         grid-row: 1;
     }
 
-    .under{
+    .under {
         grid-column: 1 / -1;
         grid-row: 2;
     }
 }
-
