@@ -451,7 +451,6 @@ ul li {
 }
 
 
-
 .psection img {
     width: 100%;
     height: auto;
@@ -485,9 +484,6 @@ ul li {
     margin: 40px;
     margin-left: 3px;
 }
-
-
-
 
 .scroll2 {
     display: flex;
@@ -739,8 +735,6 @@ ul li {
     margin-left: 5px;
 }
 
-
-
 .betaling h2 {
     font-weight: bold;
     font-size: 1.2rem;
@@ -803,6 +797,23 @@ ul li {
 .checkbox label {
     font-size: 0.7rem;
     cursor: pointer;
+}
+
+.psection .litebilder img {
+    max-width: 160px;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.asideflex {
+    display: flex;
+    flex-direction: row;
+}
+
+.particle img {
+    min-width: 200px;
 }
 
 
@@ -1029,6 +1040,7 @@ ul li {
     }
 
     .over {
+        margin-top: 20px;
         grid-column: 1 / -1;
         grid-row: 1;
     }
