@@ -14,6 +14,7 @@
 <body>
     <div id="grid-container">
         <header>
+            <section class="header">
             <form class="search">
                 <label for="search"></label>
                 <input type="search" placeholder="Søk etter produkter..." id="search">
@@ -39,10 +40,11 @@
             </ul>
         </nav>
 
-        <section class="nav-ikoner">
+         <section class="nav-ikoner">
             <i class="fa-solid fa-user"></i>
             <i class="fa-solid fa-heart"></i>
             <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+         </section>
         </section>
 
         </header>
@@ -59,9 +61,9 @@
                 <p>Oppdag det beste av det beste</p>
             </section>
             <section class="knapp">
-                <button type="button" disabled>New Product</button>
-                <button type="button" disabled>Special Price</button>
-                <button type="button" disabled>Best Sellers</button>
+                <button class="firstknapp">New Product</button>
+                <button>Special Price</button>
+                <button>Best Sellers</button>
             </section>
 <!--Populære produkter-->
             <section class="produkter">
@@ -69,8 +71,9 @@
                 <article>
                         <a href="product.html">
                         <img src="https://picsum.photos/400" alt="Produktbilde 1">
-                        </a>
+                        
                         <h3>Product name</h3>
+                        </a>
                         <p>Kr 1999</p>
                         <ul class="stjerner">
                             <li><i class="fa-solid fa-star"></i></li>
@@ -85,8 +88,9 @@
                 <article>
                         <a href="product.html">
                         <img src="https://picsum.photos/400" alt="Produktbilde 2">
-                        </a>
+                        
                         <h3>Product name</h3>
+                        </a>
                         <p>Kr 1999</p>
                         <ul class="stjerner">
                             <li><i class="fa-solid fa-star"></i></li>
@@ -101,8 +105,9 @@
                 <article>
                         <a href="product.html">
                         <img src="https://picsum.photos/400" alt="Produktbilde 3">
-                        </a>
+                        
                         <h3>Product name</h3>
+                        </a>
                         <p>Kr 1999</p>
                         <ul class="stjerner">
                             <li><i class="fa-solid fa-star"></i></li>
@@ -117,8 +122,9 @@
                 <article>
                         <a href="product.html">
                         <img src="https://picsum.photos/400" alt="Produktbilde 4">
-                        </a>
+                        
                         <h3>Product name</h3>
+                        </a>
                         <p>Kr 1999</p>
                         <ul class="stjerner">
                             <li><i class="fa-solid fa-star"></i></li>
@@ -133,8 +139,9 @@
                 <article>
                         <a href="product.html">
                         <img src="https://picsum.photos/400" alt="Produktbilde 4">
-                        </a>
+                        
                         <h3>Product name</h3>
+                        </a>
                         <p>Kr 1999</p>
                         <ul class="stjerner">
                             <li><i class="fa-solid fa-star"></i></li>
@@ -149,8 +156,9 @@
                 <article>
                         <a href="product.html">
                         <img src="https://picsum.photos/400" alt="Produktbilde 6">
-                        </a>
+                        
                         <h3>Product name</h3>
+                        </a>
                         <p>Kr 1999</p>
                         <ul class="stjerner">
                             <li><i class="fa-solid fa-star"></i></li>
@@ -200,6 +208,8 @@
 <!--Anmeldelser-->
             <aside class="anmeldelser">
                 <h2>Anmeldelser</h2>
+
+                <div class="scroll">
 
                 <article>
                     <img src="https://picsum.photos/150/150" alt="Anmeldelse 1">
@@ -255,6 +265,7 @@
                     <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Tellus amet vehicula proin morbi conubia ipsum nisi nullam.</p>
                     
                 </article>
+                </div>
             </aside>
     </main>
 
